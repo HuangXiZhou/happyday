@@ -5,7 +5,6 @@ const chalk = require('chalk')
 const axios = require('axios')
 
 const key = {
-	ip: '118.212.209.60',
 	ak: '8PLvkWpF06CnaSu72BBsmyIHowbf76Lr'
 }
 
