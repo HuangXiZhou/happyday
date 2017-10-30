@@ -4,14 +4,15 @@ const program = require('commander')
 const chalk = require('chalk')
 const axios = require('axios')
 
-const key = {
-	ak: '8PLvkWpF06CnaSu72BBsmyIHowbf76Lr'
-}
+const URL_IP = 'http://api.map.baidu.com/location/ip'
+const URL_FORECAST = 'http://api.map.baidu.com/telematics/v3/weather'
+
+const KEY = { ak: '8PLvkWpF06CnaSu72BBsmyIHowbf76Lr' }
 
 let getweatherModel = {
 	location: '',
 	output: 'json',
-	ak: key.ak,
+	ak: KEY.ak,
 }
 
 program
@@ -19,8 +20,8 @@ program
 	.alias('w')
 	.description(chalk.green('Get weather forecast ;)'))
 	.action(option => {
-		axios.get('http://api.map.baidu.com/location/ip', {
-			params: key
+		axios.get(URL_IP, {
+			params: KEY
 		})
 		.then(res => {
 			if(res.status !== 200) {
@@ -30,7 +31,7 @@ program
 					console.log(chalk.red('Oye!!! You are in abroad.'))
 				} else {
 					getweatherModel.location = res.data.content.address_detail.city
-					axios.get('http://api.map.baidu.com/telematics/v3/weather', {
+					axios.get(URL_FORECAST, {
 						params: getweatherModel
 					})
 					.then(res => {

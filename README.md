@@ -9,7 +9,7 @@ Usage: happyday [options] [command]
 
 Options:
 
-  -h, --help  output usage information
+  --help  output usage information
 
 
 Commands:
