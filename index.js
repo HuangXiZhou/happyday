@@ -33,7 +33,7 @@ program
 				if(res.data.status !== 0) {
 					console.log(chalk.red('Oye!!! You are not in China.'))
 					console.log('')
-					console.log('so...')					
+					console.log('so...')
 					let config = _.assign({
 							cityName: ''
 					}, option)
@@ -58,13 +58,13 @@ program
 								console.log(chalk.red('emmmmm... I don\'t know what happened.'))
 							} else {
 								if(!data.query.count) {
-									console.log(chalk.red('Please... Enter the correct city name.'))								
+									console.log(chalk.red('Please... Enter the correct city name.'))
 								} else {
 									let resource = data.query.results.channel.item
 									console.log(
 										`City: ${chalk.green(answers.cityName)} ❤️\n` +
 										`Date: ${chalk.green(resource.condition.date)}\n` +
-										`Temp: ${chalk.green(resource.condition.temp)}${chalk.green('F')} | ${chalk.green(resource.condition.text)}`										
+										`Temp: ${chalk.green(resource.condition.temp)}${chalk.green('F')} | ${chalk.green(resource.condition.text)}`
 									)
 									resource.forecast.forEach(item => {
 										console.log(
@@ -76,7 +76,7 @@ program
 								}
 							}
 						})
-        	}) 
+        	})
 				} else {
 					getweatherModel.location = res.data.content.address_detail.city
 					axios.get(URL_FORECAST, {
