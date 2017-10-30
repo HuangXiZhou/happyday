@@ -1,6 +1,6 @@
 {
   "name": "happyday",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Happy every day",
   "main": "index.js",
   "scripts": {

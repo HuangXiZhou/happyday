@@ -1,15 +1,22 @@
 # happyday
 >Get weather forecast in bash and happy everyday~
 
-## Get it now
+## Usage
 
 ```bash
-# install happyday
-npm install happyday -g
+Usage: happyday [options] [command]
 
-# enjoy happyday
-happyday weather
 
-# get help
-happyday --help
+Options:
+
+  -h, --help  output usage information
+
+
+Commands:
+
+  weather|w   Get weather forecast ;)
 ```
+## Installation
+
+* Install Node.js and npm
+* Run npm install -g happyday
