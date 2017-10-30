@@ -12,14 +12,19 @@
     "bash",
     "shell"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HuangXiZhou/happyday.git"
+  },
   "author": "xizhouh@gmail.com",
   "license": "MIT",
   "bin": {
     "happyday": "./index.js"
   },
-  "devDependencies": {
+  "dependencies": {
     "axios": "^0.17.0",
     "chalk": "^2.3.0",
-    "commander": "^2.11.0"
+    "commander": "^2.11.0",
+    "progress": "^2.0.0"
   }
 }
