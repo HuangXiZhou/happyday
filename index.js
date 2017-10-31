@@ -105,6 +105,9 @@ program
 							}
 						}
 					})
+					.catch(error => {
+						console.log(chalk.red('emmmmm... I don\'t know what happened.'))
+					})
 				}
 			}
 		})
