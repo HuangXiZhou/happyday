@@ -1,6 +1,9 @@
 # happyday
 >Get weather forecast in bash and happy everyday~
 
+![MIT]()
+[![npm](https://img.shields.io/badge/npm-v1.0.6-brightgreen.svg)](https://www.npmjs.com/package/happyday)
+
 ## Usage
 
 ```bash
