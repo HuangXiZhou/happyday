@@ -1,7 +1,7 @@
 # happyday
 >Get weather forecast in bash and happy everyday~
 
-![MIT]()
+[![MIT](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/HuangXiZhou/happyday/blob/master/LICENSE)
 [![npm](https://img.shields.io/badge/npm-v1.0.6-brightgreen.svg)](https://www.npmjs.com/package/happyday)
 
 ## Usage
